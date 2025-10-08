@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>D'Milly Detalles</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": {
+                            DEFAULT: "#D3A993",
+                            "light": "#F5E9E2",
+                            "dark": "#A88775"
+                        },
+                        "background": {
+                            light: "#FDFBF9",
+                            dark: "#1C1A19"
+                        },
+                        "text-light": "#6B6462",
+                        "text-dark": "#E3DEDC",
+                    },
+                    fontFamily: {
+                        "display": ["Playfair Display", "serif"],
+                        "body": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            @apply bg-background-light text-text-light font-body;
+        }
+        .dark body {
+            @apply bg-background-dark text-text-dark;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative min-h-screen w-full">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="absolute top-0 left-0 w-full z-10 px-4 sm:px-6 lg:px-10 py-4">
+                <div class="flex items-center justify-between whitespace-nowrap text-white">
+                    <div class="flex items-center gap-3">
+                        <a class="flex items-center gap-2 text-2xl font-display font-bold text-white" href="#">
+                            D’Milly Detalles
+                        </a>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Inicio</a>
+                        <a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Catálogo</a>
+                        <a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Ocasiones
+                            Especiales</a>
+                        <a class="text-sm font-medium hover:text-primary-light transition-colors" href="#">Ofertas</a>
+                        <a class="text-sm font-medium hover:text-primary-light transition-colors"
+                            href="#">Contáctanos</a>
+                    </nav>
+                    <div class="hidden md:flex items-center gap-2">
+                        <button
+                            class="flex items-center justify-center rounded-lg h-10 px-4 bg-transparent border border-white text-white text-sm font-bold hover:bg-white/10 transition-colors">
+                            <span>Iniciar sesión</span>
+                        </button>
+                    </div>
+                    <button
+                        class="md:hidden flex items-center justify-center rounded-lg size-10 bg-white/10 text-white hover:bg-white/20 transition-colors">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"></path>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <main class="flex-1">
+                <section
+                    class="relative min-h-screen flex items-center justify-center text-center text-white bg-cover bg-center"
+                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAp7IrZ2DH3Pq9RCyGkOI8mgmx0NiKRUui6rFyVMdCAkKuqbuJb9-qj6aIJ-ex-yv5jPLhPQ-T-aV9uXWQokhRP452r_XkoxXr7BhoVCXumiKiZXcSIXT6JeOoTNUSG5RgY6rzS5kZt_cGf-Jl28nVeVgxbpUqQPwX40fTMvNKEMw2IR0C64eJKfBQ6PEshLPd109AJw61Y2uwKwYTMF9QIC-sKGJ4U_SSHcyONchbHL6iSmjZU1hfTa7DTOBLvrK7KnKIOhiNbwX0");'>
+                    <div class="max-w-3xl px-4">
+                        <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight tracking-tight">Regalos que
+                            Cuentan Historias</h1>
+                        <p class="mt-4 text-lg md:text-xl font-light max-w-2xl mx-auto">Encuentra el detalle perfecto
+                            para cada ocasión especial. Piezas únicas que transmiten emociones y crean recuerdos
+                            inolvidables.</p>
+                        <a class="mt-8 inline-block flex-shrink-0 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-primary text-white text-lg font-bold leading-normal tracking-wide hover:bg-primary-dark transition-shadow shadow-lg shadow-primary/30"
+                            href="#">
+                            Explorar Catálogo
+                        </a>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center max-w-2xl mx-auto">
+                            <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 dark:text-white">
+                                Nuestros productos destacados</h2>
+                            <p class="mt-4 text-lg text-text-light dark:text-text-dark">Descubre algunos de nuestros
+                                productos más populares y mejor valorados por nuestros clientes.</p>
+                        </div>
+                        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-w-16 aspect-h-9 bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC58UiWAmFPe1xrC03H19yDDYi5NLgYtSa7cScx45qVFJwzTbb7sPjla4s3ow_8W88NLjGzNnV5PwGxWlSBP2EHJPpKMZCJB1lkxIUIuQnY2GTB5ELBfXYed-xkwS2l7Xzndkgqo6vjkDNtMqp1I4L8zSiJ38Jl9lN6j72cO4kkSmDlz0AOElQ6EJiG924kqT-I8CIRA7OjPAaAZhLb08H13wcVmg4j0yIwKEgEEtyXl1DMi9lkJxOAf74xSasrZh-V1rqXT8CF-Dc");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Cajas de regalo
+                                        personalizadas</h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Crea una caja de regalo
+                                        única con tus productos favoritos y un mensaje especial.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-w-16 aspect-h-9 bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ5catwemdtiPS2EOk5hCNPHjIIHsdQUIi8k9m2GFWQpkBLKkgTsR1pnnqOh7PXUQcXCivYcsEWpwxdY-NyZySy8VrnPRwJNfpVfAEXnXxneITWxQeoj4RWRvsh14JRMwyhpyvxT5wyIDgyhG17RqcCsSaSGY8-gTvhTSryz8kbJX7wGH-x847YAe9SCHkajwiJmhJ0a8kVqmPRmICXk2QOcdqgGu0ZXLlDnJD2D-rjr9pFxGLn7gtPH-USNLIFExnpC8K-3NUzNo");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Tazas con diseños únicos
+                                    </h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Elige entre una amplia
+                                        variedad de diseños o personaliza tu propia taza.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-w-16 aspect-h-9 bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSByKc9zqCGTsCgJhKJocswPu_bLz-BV6IODDIlubK7WOEt74EAj-PTAljtadcnLD02By2sCTx5I3WTMbQedusfDo5PZEOpCm-AubdzHwwvliwtf5P0cj1ETgfOGjDIMkRmTmzQRidHrQo90TX_qc3bYWtI9bYvJDaeiPJvu4QpwxlTE2hnmQ5EZMxj9cQlbTmw-dbnxz68vHBlaFYhxyY4I-GY6rTN5lbq-jLXfnlLV1ttkLFia7BaKjwzMKv81rQXBh6XkyQFbo");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Tarjetas de felicitación
+                                        artesanales</h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Expresa tus sentimientos
+                                        con una tarjeta hecha a mano, perfecta para cualquier ocasión.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="bg-primary-light dark:bg-primary/10 py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-2xl mx-auto text-center">
+                        <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 dark:text-white">Mantente
+                            al día con nuestras novedades y ofertas</h2>
+                        <p class="mt-4 text-lg text-text-light dark:text-text-dark">Recibe información sobre nuevos
+                            productos, promociones exclusivas y descuentos especiales directamente en tu correo
+                            electrónico.</p>
+                        <div class="mt-8 flex justify-center">
+                            <button
+                                class="flex-shrink-0 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary-dark transition-colors">
+                                Suscríbete
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-7xl mx-auto">
+                        <div class="text-center max-w-2xl mx-auto mb-12">
+                            <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 dark:text-white">
+                                Regalos para Toda Ocasión</h2>
+                        </div>
+                        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1kJy8yuu4_A1ks02VBSJa6Ur1Vo9ZzWlbhxbuehlsLtUEa0d2cWlqXyLQDamP1nfmMBZvjUvawaWFLncNi7X2ICkWKHC0uW1vSgFPWzFp6p6JTPuJsVjKh5LbdPEyoyZyYf-uJgXf_-S8v8AEhAkWEFupKjhNJzTNp2dpNRzujG6ZMP3QO_cqdQhRBiLc9wXGcuA2TMRzD1RhhxeBIKF2y2DXcyWvyzRHALO9CVSPqL12Rf8_IsiqKWppCCGyzNVlWQqAScY94yk");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Regalos para cumpleaños
+                                    </h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Encuentra el regalo
+                                        perfecto para celebrar un cumpleaños inolvidable.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADEzjeM4MZQ6P27QcoPEY6n_RONRayrsj8x2GInQ650sMcFQNh7phhP9ke2YHRg70sRr-3bzFcA5MiO5nlcUJonrfLBehH2CZFAou68CVUj4BrbuZsC9cb14ziAKPsZqy7n9WLSepqdwLXaQZ6huPNoFPDqOKTeA75aU7o6kg38iV5ILqbU0AZ4JO5_cR0hDVA96uUljb38h5wNSlbI_zpSE1G6RN5wSY6-vnXO9Jr_EfWqHhQIBkK8iB0XF1awA_mO16LfVFqgNU");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Regalos para
+                                        aniversarios</h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Celebra el amor con un
+                                        regalo especial que marque un aniversario.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4 group">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg overflow-hidden"
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVroyX9WQfbxGC5gW9C_Jom7MXB4Sy7AbFO1X0_SIj6mu2ypRk_25-wCa9KeXaHOkZ9ObHWYRQu0NBMBPPv_ew-KSxSB2kOCEwACBxjpJCRDMWILZ3qtVDRzvdZuX7AZw1sfIsLHnGkuwjogNsytWsZckU2RyXGJCzGBNEXurviHTkPtL3RR7zvQQ3Qpu3L8QYAd5BlhKsxf925zHXmFouVwhL3_jAUXs_Ep-adUtLi0Y0MrnkXkLHEMlweYlgh8J-x5oBrts0dLA");'>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-gray-900 dark:text-white">Regalos para ocasiones
+                                        especiales</h3>
+                                    <p class="text-sm text-text-light dark:text-text-dark mt-1">Sorprende con un detalle
+                                        único para cualquier ocasión.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark">
+                    <div class="max-w-7xl mx-auto">
+                        <h2
+                            class="text-3xl sm:text-4xl font-display font-bold text-gray-900 dark:text-white text-center">
+                            Lo que dicen nuestros clientes</h2>
+                        <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                            <div
+                                class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-zinc-800 border border-primary-light dark:border-primary/20 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHXQn-ivaBdNOsm1OUa0qKek6QwgyVa2onEh7vjzfO39LmWSapVeF5HJD3d3xNxHTmLhmiMcR9-qy7pXP3QStYLmqic52Ai8MQ0XTphSuj0pnH5kYzRkCQAl8OhCR9dlioTQvxk9NAvMTolEyU2OX4IBVGiFTGvH32oDAck2lKfRciBeomYHNz-LSPlh-YOexvmNlJmASFILZjW7YWqBbg1q8R_SStXoTr6oLE28AbrC_INlzN8UjpCGKcp5rnXiTkfB-_qz7y6yo");'>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-base font-semibold text-gray-900 dark:text-white">Sofía García
+                                        </p>
+                                        <p class="text-sm text-text-light dark:text-text-dark">15 de mayo de 2024</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-0.5 text-primary">
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="text-text-light dark:text-text-dark">"Encontré el regalo perfecto para mi
+                                    amiga en D'Milly Detalles. La calidad y el diseño superaron mis expectativas.
+                                    ¡Recomendado!"</p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-zinc-800 border border-primary-light dark:border-primary/20 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiZZi7RpsiOQ9gTTFLmznKZGMGKEMEWC0t0qLma9e0zD-uXl74IXloeWYRN_4natF2En4FI1hb49zaSiw-bhLsa1wEC0XATffsOFjj1dngB7VqfcAdR1l3Jhyio37fZxi-IoIcmX6Q1lwXPGPAYQZRrPLm20MYdEKHQMqZxelnE3-vDRMrnDBeqFiRTwdim0we-Q0xtP9-m8NZs9OhFCVrCDHZDmEFS3zVog9S5AMVSkYJMXpSdNuNz4CCkNkSvul7IMzm6ylvYq0");'>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-base font-semibold text-gray-900 dark:text-white">Carlos López
+                                        </p>
+                                        <p class="text-sm text-text-light dark:text-text-dark">20 de abril de 2024</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-0.5 text-primary">
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg class="text-primary/30" fill="currentColor" height="20px" viewBox="0 0 256 256"
+                                        width="20px" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="text-text-light dark:text-text-dark">"Compré un regalo de aniversario y a mi
+                                    pareja le encantó. El servicio fue excelente y la entrega rápida."</p>
+                            </div>
+                            <div
+                                class="flex flex-col gap-4 p-6 rounded-lg bg-white dark:bg-zinc-800 border border-primary-light dark:border-primary/20 shadow-sm">
+                                <div class="flex items-center gap-4">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12"
+                                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDf-_ETSXMEVirbfGsQJ93vtUXHtpH2JOuKCueui_abjebbYpg_6q070aWjGqLvLSKEZR3E6f9iSWlSq7hKXkPj8qdoJBmFPs6FpvQNopszR-3qGftIkPJs7Cr8SY5BB5Pg3NiUK091OZ8NlUdd-YZ_uIjn6c_jaHgqrXoUs3elgYk6wPNix3fNRqtQAx-IF7UBe-FKRR8naKItEjsxuc9cIXcvhwXHukmhpH125V-3iM1vuzaYJaL0Ka1dGo-kzb4_qbhPmu5JhIA");'>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-base font-semibold text-gray-900 dark:text-white">Ana Martínez
+                                        </p>
+                                        <p class="text-sm text-text-light dark:text-text-dark">5 de marzo de 2024</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-0.5 text-primary">
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                    <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="text-text-light dark:text-text-dark">"Siempre encuentro algo especial en esta
+                                    tienda. Los productos son originales y de alta calidad. ¡Mi lugar favorito para
+                                    comprar regalos!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="border-t border-primary-light/50 dark:border-primary/20 py-10 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto text-center text-text-light dark:text-text-dark">
+                    <div class="flex flex-wrap items-center justify-center gap-6 mb-6">
+                        <a class="text-sm hover:text-primary-dark transition-colors" href="#">Política de privacidad</a>
+                        <a class="text-sm hover:text-primary-dark transition-colors" href="#">Términos y condiciones</a>
+                        <a class="text-sm hover:text-primary-dark transition-colors" href="#">Preguntas frecuentes</a>
+                    </div>
+                    <div class="flex justify-center gap-6 mb-6">
+                        <a class="text-text-light dark:text-text-dark hover:text-primary-dark transition-colors"
+                            href="#">
+                            <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="text-text-light dark:text-text-dark hover:text-primary-dark transition-colors"
+                            href="#">
+                            <svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-sm">© 2024 D'Milly Detalles. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
